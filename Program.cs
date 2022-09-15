@@ -29,3 +29,8 @@ for(i = 0; i < favouriteFoods.Length; i++)
 {
     Console.WriteLine($"{i+1}. {favouriteFoods[i]}");
 }
+
+Console.WriteLine("");
+Console.WriteLine($"Cibo preferito: {favouriteFoods[0]}");
+Console.WriteLine($"Ultimo cibo preferito: {favouriteFoods[4]}");
+

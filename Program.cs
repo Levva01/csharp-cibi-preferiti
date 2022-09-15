@@ -10,12 +10,9 @@ string[] favouriteFoods = new string[] {
 
 int i = 0;
 
-for (i = 1; i < favouriteFoods.Length-1; i++)
-{
-    i++;
-}
+int lunghezzaArray = favouriteFoods.Length;
 
-Console.WriteLine($"Lunghezza della classifica {i}");
+Console.WriteLine($"Lunghezza della classifica {lunghezzaArray}");
 
 favouriteFoods[1] = "Gelato";
 favouriteFoods[2] = "Torta";
@@ -34,3 +31,14 @@ Console.WriteLine("");
 Console.WriteLine($"Cibo preferito: {favouriteFoods[0]}");
 Console.WriteLine($"Ultimo cibo preferito: {favouriteFoods[4]}");
 
+int mediana = 0;
+
+if ((lunghezzaArray / 2) % 2 == 0)
+{
+    mediana = lunghezzaArray / 2;
+} else
+{
+    mediana = lunghezzaArray / 2 - 1;
+}
+
+Console.WriteLine($"Mediana: {favouriteFoods[mediana]}");

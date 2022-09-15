@@ -1,4 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-//prova push
+string[] favouriteFoods = new string[] {
+                "Pizza",
+                "Sushi",
+                "Gelato",
+                "Torta",
+                "Pasta"
+};
